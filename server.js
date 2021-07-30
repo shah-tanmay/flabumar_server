@@ -102,9 +102,8 @@ io.on("connection", (socket) => {
 	});
 });
 
-server.listen(5000, () => {
+server.listen(process.env.PORT, () => {
 	console.log("Server is up on port 5000");
 });
 
 module.exports = io;
-// 2eFBV2sGRQFNKncTUUHLbepJ3ClYdEBl
